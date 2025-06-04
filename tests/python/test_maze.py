@@ -1,6 +1,8 @@
 import pytest
-from src.python.maze import Maze
-
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src")))
+from python.maze import Maze
 def test_maze_dimensions():
     # verifica se o grid tem as dimensões corretas
     m = Maze(width=8, height=5, seed=0, num_enemies=0, num_pits=0, num_powerups=0, num_teleporters=0)

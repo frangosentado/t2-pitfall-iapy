@@ -1,0 +1,6 @@
+consult('pitfall.pro').
+?- consult('knowledge.pl').
+?- consult('rules.pl').
+?- consult('decision.pl').
+?- consult('pitfall_tests.pl').
+?- run_tests.
